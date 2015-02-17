@@ -1,0 +1,39 @@
+<html> 
+<head> 
+<style type="text/css"> 
+#digitsclock { 
+ width:100px; 
+ border:5px solid green; 
+ marging:auto;
+ background-color:blue; 
+ color:white; 
+ font-weight:bold; 
+ font-size:14px; 
+ } 
+</style> 
+ 
+<script type="text/javascript"> 
+function chas(){ 
+var vreme= new Date(); 
+ 
+var hh = vreme.getHours(); 
+var mm = vreme.getMinutes(); 
+var ss = vreme.getSeconds(); 
+ 
+if( hh <=9 ) hh = "0"+hh; 
+if( mm <=9 ) mm = "0"+mm; 
+if( ss <=9 ) ss = "0"+ss; 
+ 
+document.getElementById('digitsclock').innerHTML= hh+":"+mm+":"+ss; 
+window.setTimeout("chas()",1000); 
+} 
+ 
+</script> 
+ 
+</head> 
+ 
+<body onLoad="chas()"> 
+<center><div id="digitsclock"></div></center>
+ 
+</body> 
+</html>

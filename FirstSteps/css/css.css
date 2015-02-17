@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.50);
+    color: #262626;
+    background: #cdf url(../images/wood-bg.jpg);
+}
+
+.shell
+{
+    width: 950px;
+    min-height: 100%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 13px 7px rgba(0, 0, 0, 0.2);
+}
+
+#header h1
+{
+    position: absolute;
+    padding: 0 10px 5px 10px;
+    z-index: 1;
+    right: 30px;
+    color: #d4af37;
+    background: rgba(236, 0, 112, 0.8);
+}
+
+.header-image
+{
+    clear: left;
+    float: inherit;
+}
+
+#content
+{
+    clear: both;
+}
+
+#content .modules
+{
+    list-style-type: none;
+    width: 950px;
+    margin: 0 auto;
+    padding: 20px 0 0;    
+}
+
+#content .modules > li
+{
+    list-style-type: none;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    padding: 20px 0 0;
+}
+
+#content .modules > li
+{
+    border-radius: 20px;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3px;
+}
+
+#content .modules > li.modul1
+#content .modules > li.modul1 h2
+{
+    -webkit-transition: all, linear 500ms;
+    -moz-transition: all, linear 500ms;
+    -o-transition: all, linear 500ms;
+    -ms-transition: all, linear 500ms;
+    transition: all, linear 500ms;
+}
+
+#content .modules > li.modul1:hover
+{
+    color: #fff;
+    background: #23cc23;
+}
+
+#content .modules > li.modul1:hover h2
+{
+    color: #000;
+}
+
+#content .modules > li.modul2:hover
+
+{
+    color: #fff;
+    background: #23cc23;
+}
+
+#content .modules > li.modul2:hover h2
+
+{
+    color: #000;
+}
+
+#content .modules > li.modul3:hover
+{
+    color: #fff;
+    background: #23cc23;
+}
+
+#content .modules > li.modul3:hover h2
+{
+    color: #000;
+}
+
+#content .modules > li:first-child
+{
+    margin: 0;
+}
+
+#content .modules > li.modul1
+{
+    background: #c5ce05;
+}
+
+#content .modules > li.modul2
+{
+    background: #ffd700;
+}
+
+#content .modules > li.modul3
+{
+    background: #ec0070;
+}
+
+#content .texts {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #fff;
+    background: #000;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.writes {
+    list-style-type: square;
+    margin-left: 10px;
+}
+
+#content #resizable
+{
+    margin-bottom: 10px;
+}
+			
+#content #resizable div
+{
+    padding: 5px 10px;
+    border: 1px #333 solid;
+    height: 40px;
+    width: 300px;
+    background-color: red;
+    -webkit-transition: height 0.3s ease-in-out, background-color 0.3s;
+    -o-transition: height 0.3s ease-in-out, background-color 0.3s;
+    -moz-transition: height 0.3s ease-in-out, background-color 0.3s;
+    transition: height 0.3s ease-in-out, background-color 0.3s;
+}
+
+#content #resizable div:hover
+{
+    background-color: blue;
+    height: 100px;
+			
+    -webkit-transition: height 0.6s ease-in-out, background-color 0.6s;
+    -o-transition: height 0.6s ease-in-out, background-color 0.6s;
+    -moz-transition: height 0.6s ease-in-out, background-color 0.6s;
+    transition: height 0.6s ease-in-out, background-color 0.6s;
+}

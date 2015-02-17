@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<software>
+<program>  
+    <name>
+          <product version="4">Bryce</product>
+          <company>MetaCreations Corporation</company>     
+     </name>
+     <type>
+           <category>graphics</category>
+           <subcategory>3D graphics and animation</subcategory>
+     </type>
+      <system>
+            <cpu>Pentium</cpu>
+             <ram>32MB</ram>
+      </system>
+</program>
+<program>  
+    <name>
+          <product version="4">Poser</product>
+          <company>MetaCreations Corporation</company>
+     </name>
+     <type>
+           <category>graphics</category>
+           <subcategory>character creation and animation</subcategory>
+     </type>
+      <system>
+            <cpu>Pentium</cpu>
+             <ram>32MB</ram>
+      </system>
+</program>
+<program>  
+    <name>
+          <product version="2003">Norton Antivirus</product>
+          <company>Symantec Corporation</company>
+     </name>
+     <type>
+           <category>security</category>
+           <subcategory>antivirus</subcategory>
+     </type>
+      <system>
+            <cpu>Pentium 133MHz</cpu>
+             <ram>32MB</ram>
+      </system>
+</program>
+<program>  
+    <name>
+          <product version="6">Delphi</product>
+          <company>Borland Corporation</company>
+     </name>
+     <type>
+           <category>development</category>
+           <subcategory>software development</subcategory>
+     </type>
+      <system>
+            <cpu>Pentium 166Mhz</cpu>
+             <ram>64MB</ram>
+      </system>
+</program>
+</software>

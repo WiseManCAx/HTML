@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="/">
+    <HTML>
+      <BODY>
+        <TABLE BORDER="1">
+          <TR STYLE="font-weight:bold">
+            <TD>Program name</TD>
+            <TD>Producer</TD>
+            <TD>Category</TD>
+            <TD>Subcategiry</TD>
+            <TD>CPU requirements</TD>
+            <TD>RAM requirements</TD>
+          </TR>
+          <xsl:for-each select="software/program">
+            <TR>
+              <xsl:apply-templates/>
+            </TR>
+          </xsl:for-each>
+        </TABLE>
+      </BODY>
+    </HTML>
+  </xsl:template>
+
+  <xsl:template match="name">
+    <TD><xsl:value-of select="product"/></TD>
+    <TD><xsl:value-of select="company"/></TD>
+  </xsl:template>
+
+  <xsl:template match="type">
+    <TD><xsl:value-of select="category"/></TD>
+    <TD><xsl:value-of select="subcategory"/></TD>
+  </xsl:template>
+
+  <xsl:template match="system">
+    <TD><xsl:value-of select="cpu"/></TD>
+    <TD><xsl:value-of select="ram"/></TD>
+  </xsl:template>   
+</xsl:stylesheet>
